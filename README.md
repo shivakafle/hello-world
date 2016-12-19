@@ -1,2 +1,4 @@
 # hello-world
-just another repository
+
+Hi shva!
+I am the student of gread XI.
