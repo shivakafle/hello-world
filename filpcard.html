@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      font-family: Poppins;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      margin-left: 20px;
+      padding: 5px 10px;
+      cursor: pointer;
+      position: relative;
+
+    }
+
+    .active {
+      border-bottom: 2px solid rgb(255, 0, 0);
+    }
+
+    .navbar ul li::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      border-bottom: 2px solid rgb(255, 0, 0);
+      transition: all .5s ease;
+    }
+
+    .navbar ul li:hover::before {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar">
+    <h2>Kafle</h2>
+    <ul>
+      <li class="active"><a href="#">Home</a> </li>
+      <li><a href="#">About</a> </li>
+      <li><a href="#">Contact</a> </li>
+      <li><a href="#">Service</a> </li>
+      <li><a href="#">Facilities</a> </li>
+
+    </ul>
+  </div>
+</body>
+
+
+</html>
